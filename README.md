@@ -16,23 +16,23 @@ A snippet of the output looks as follows
 ```bash
 -------------------------------------------------------
 
-Testing vpc.json...
+Testing wordpress.json...
 
 
 Infrastructure as code issues:
-  ✗ Security Group allows open ingress [Medium Severity] [SNYK-CC-TF-1] in VPC
-    introduced by Resources > ELBSecurityGroup > Properties > SecurityGroupIngress[0]
+  ✗ SAS token can be used over insecure HTTP [Medium Severity] [SNYK-CC-TF-244] in Storage
+    introduced by resources[2] > properties > supportsHttpsTrafficOnly
 
 
-Organization:      ben.laplanche.test
-Type:              CloudFormation
-Target file:       /Users/benlaplanche/workspace/snyk-iac-cloudformation/vpc.json
-Project name:      snyk-iac-cloudformation
+Organization:      yair.zohar
+Type:              ARM
+Target file:       wordpress.json
+Project name:      snyk-iac-arm
 Open source:       no
-Project path:      .
+Project path:      snyk/snyk-iac-arm
 
-Tested vpc.json for known issues, found 1 issues
+Tested wordpress.json for known issues, found 1 issues
 
 
-Tested 11 projects, 9 contained issues.
+Tested 7 projects, 5 contained issues.
 ```
