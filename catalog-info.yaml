@@ -4,8 +4,8 @@ metadata:
   name: snyk-iac-arm
   annotations:
     github.com/project-slug: snyk/snyk-iac-arm
-    github.com/team-slug: snyk/cloud-dev-ex
+    github.com/team-slug: snyk/iac
 spec:
   type: iac
   lifecycle: "-"
-  owner: cloud-dev-ex
+  owner: iac
